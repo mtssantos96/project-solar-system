@@ -1,3 +1,133 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+body {
+  background-image: url('./images/background.png');
+}
+
+header {
+  align-items: center;
+  color: #f0f0f0;
+  display: flex;
+  font-size: 20px;
+  height: 100px;
+  justify-content: center;
+  padding: 5px;
+}
+
+.solar-system {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  align-items: center;
+  border: 4px solid #dadada;
+  border-radius: 10px;
+  color: #f0f0f0;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  margin: 2em;
+  width: 80%;
+}
+
+.planets-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+
+.planets {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.planet-card {
+  height: 50%;
+}
+
+.img-planet {
+  max-height: 100%;
+}
+
+.p-planets {
+  color: #f0f0f0;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+.missions-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.missions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.mission-card {
+  border: 2px solid #dadada;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin: 10px;
+  width: 20%;
+}
+
+.mission-name {
+  align-items: center;
+  border: 1px solid #424242;
+  border-radius: 10px;
+  display: flex;
+  font-size: 25px;
+  height: 4em;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.mission-info {
+  align-content: stretch;
+  border: 1px solid #424242;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+
+.mission-year, .mission-dest, .mission-country {
+  border: 1px solid #424242;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  font-size: 1.4em;
+  margin: 10px;
+  padding: 6px;
 }
