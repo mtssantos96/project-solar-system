@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaCalendarAlt, FaMapMarkerAlt, FaFlag } from 'react-icons/fa';
 
 class MissionCard extends React.Component {
   render() {
@@ -8,9 +9,24 @@ class MissionCard extends React.Component {
       <div className="mission-card" data-testid="mission-card">
         <p className="mission-name" data-testid="mission-name">{name}</p>
         <div className="mission-info">
-          <p className="mission-year" data-testid="mission-year">{year}</p>
-          <p className="mission-country" data-testid="mission-country">{country}</p>
-          <p className="mission-dest" data-testid="mission-destination">{destination}</p>
+          <div className="mission-info-container">
+            <FaCalendarAlt />
+            <p className="mission-year" data-testid="mission-year">{year}</p>
+          </div>
+          <div className="mission-info-container">
+            <FaMapMarkerAlt />
+            <p className="mission-country" data-testid="mission-country">{country}</p>
+          </div>
+          <div className="mission-info-container">
+            <FaFlag />
+            <p
+              className="mission-dest"
+              data-testid="mission-destination"
+            >
+              {destination}
+
+            </p>
+          </div>
         </div>
       </div>
     );
