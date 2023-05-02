@@ -66,6 +66,12 @@ h2 {
   height: 120px;
 }
 
+.planet-card:hover {
+  filter: brightness(1.2) contrast(1.4);
+  transform: scale3d(1.2, 1.2, 1);
+  transition: ease-in-out 300ms;
+}
+
 .p-planets {
   color: #f0f0f0;
   font-weight: 700;
@@ -103,6 +109,12 @@ h2 {
   font-weight: 700;
   margin: 10px;
   width: 300px;
+}
+
+.mission-card:hover {
+  background-color: #0d0d0dd4;
+  transform: scale3d(1.05, 1.05, 1);
+  transition: ease-in-out 300ms;
 }
 
 .mission-name {
@@ -168,4 +180,10 @@ h2 {
   font-size: 2rem;
   margin: 10px;
   width: 100%;
+}
+
+.list-item a:hover {
+  color: #43f9e7;
+  filter: brightness(1.2) drop-shadow(2px 2px 20px white);
+  transition: ease-in-out 300ms;
 }
