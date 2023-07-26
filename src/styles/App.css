@@ -1,9 +1,18 @@
 * {
   box-sizing: border-box;
+  color: var(--white);
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
+  text-decoration: none;
+}
+
+:root {
+
+  --border: 1px solid red;
+
+  --white: #f2f2f2;
 }
 
 body {
@@ -12,103 +21,211 @@ body {
 
 header {
   align-items: center;
-  color: #f0f0f0;
   display: flex;
-  font-size: 20px;
-  height: 100px;
   justify-content: center;
+  margin-top: 100px;
+}
+
+header h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:before {
+  background-color: #333;
+  border-radius: 5px;
+  color: var(--white);
+  content: attr(data-tooltip);
+  left: 50%;
+  opacity: 0;
   padding: 5px;
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+  visibility: hidden;
+}
+
+.tooltip:hover:before {
+  opacity: 1;
+  visibility: visible;
+  width: 100px;
+  z-index: 99;
 }
 
 .solar-system {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 100px;
 }
 
 .title {
+  align-items: center;
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid var(--white);
+  border-radius: 17px;
   display: flex;
+  height: 125px;
   justify-content: center;
+  mix-blend-mode: hard-light;
+  width: 80%;
 }
 
 h2 {
-  align-items: center;
-  border: 3px solid #dadada;
-  border-radius: 20px;
-  color: #f0f0f0;
-  display: flex;
-  height: 70px;
-  justify-content: center;
-  margin: 2em;
-  width: 85%;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .planets-container {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 90%;
 }
 
 .planets {
   align-items: center;
-  box-sizing: content-box;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80%;
-  width: 80%;
+  flex: 1 0 200px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .planet-card {
-  width: 150px;
-}
-
-.img-planet {
-  height: 120px;
-}
-
-.planet-card:hover {
-  filter: brightness(1.2) contrast(1.4);
-  transform: scale3d(1.2, 1.2, 1);
+  text-align: center;
   transition: ease-in-out 300ms;
 }
 
 .p-planets {
-  color: #f0f0f0;
+  color: var(--white);
   font-weight: 700;
   padding: 10px;
   text-align: center;
+  z-index: 99;
+}
+
+.planet-card a {
+  text-decoration: none;
+}
+
+/* Imagem de cada planeta */
+.img-planet.Mercúrio {
+  max-height: 7px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardMercúrio:hover .img-planet.Mercúrio {
+  transform: scale(34.285);
+}
+
+.p-planets:hover:before {
+  z-index: 99;
+}
+
+.img-planet.Vênus {
+  max-height: 19px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardVênus:hover .img-planet.Vênus {
+  transform: scale(12.631);
+}
+
+.img-planet.Terra {
+  max-height: 21px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardTerra:hover .img-planet.Terra {
+  transform: scale(11.428);
+}
+
+.img-planet.Marte {
+  max-height: 11px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardMarte:hover .img-planet.Marte {
+  transform: scale(21.818);
+}
+
+.img-planet.Júpiter {
+  max-height: 200px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardJúpiter:hover .img-planet.Júpiter {
+  transform: scale(1.2);
+}
+
+.img-planet.Saturno {
+  max-height: 167px;
+  transform: rotate(-16.53deg);
+  transition: ease-in-out 0.6s;
+}
+
+.cardSaturno:hover .img-planet.Saturno {
+  transform: scale3d(1.437, 1.437, 1) rotate(-16.53deg);
+}
+
+.img-planet.Urano {
+  max-height: 73px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardUrano:hover .img-planet.Urano {
+  transform: scale(3.287);
+}
+
+.img-planet.Netuno {
+  max-height: 71px;
+  transition: ease-in-out 0.6s;
+}
+
+.cardNetuno:hover .img-planet.Netuno {
+  transform: scale(3.38);
+}
+
+.planets:hover > :not( :hover ) {
+  filter: brightness(0.7);
 }
 
 .missions-container {
   align-items: center;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 .missions-cards {
-  background-color: #dadada15;
-  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
-  margin: 0 3rem;
-  padding: 50px;
+  margin-top: 100px;
+  width: 80%;
 }
 
 .mission-card {
-  background-color: #0000006f;
-  border: 2px solid #dadada;
+  background: rgba(24, 26, 37, 0.5);
+  border: 2px solid var(--white);
   border-radius: 20px;
-  box-sizing: border-box;
-  color: #f0f0f0;
   display: flex;
   flex-direction: column;
   font-weight: 700;
-  margin: 10px;
-  width: 300px;
+  height: 370px;
+  mix-blend-mode: hard-light;
+  width: 476px;
 }
 
 .mission-card:hover {
@@ -117,32 +234,28 @@ h2 {
   transition: ease-in-out 300ms;
 }
 
+.missions-cards:hover > :not( :hover ) {
+  filter: brightness(0.8);
+}
+
 .mission-name {
   align-items: center;
-  border: 1px solid #424242;
-  border-radius: 14px;
+  border-bottom: 2px solid var(--white);
   display: flex;
-  font-size: 1.4rem;
-  height: 4em;
+  flex: 1;
+  font-size: 1.8rem;
   justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  text-transform: uppercase;
 }
 
 .mission-info {
-  align-content: stretch;
-  border: 1px solid #424242;
-  border-radius: 14px;
   display: flex;
+  flex: 3;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin: 10px;
 }
 
 .mission-year, .mission-dest, .mission-country {
-  border-radius: 5px;
   flex-wrap: wrap;
   font-size: 1.4em;
   margin: 10px;
@@ -154,16 +267,17 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .footer {
   align-items: center;
   background-color: #0d0d0db0;
-  color: #dadada;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
+  margin-top: 100px;
   padding: 20px;
 }
 
@@ -175,15 +289,45 @@ h2 {
   width: 100px;
 }
 
-.list-item a {
-  color: #dadada;
+.list-item a svg {
+  fill: var(--white);
   font-size: 2rem;
   margin: 10px;
   width: 100%;
 }
 
-.list-item a:hover {
-  color: #43f9e7;
-  filter: brightness(1.2) drop-shadow(2px 2px 20px white);
+.list-item a:hover svg {
+  fill: cyan;
+  filter: brightness(1.2) drop-shadow(2px 2px 20px var(--white));
+  transform: scale(1.2);
   transition: ease-in-out 300ms;
+}
+
+@media screen and ( max-width : 850px ) {
+
+  .title {
+    width: 90%;
+  }
+
+  .planets {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .missions-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .tooltip {
+    width: 100%;
+  }
+
+  .mission-card {
+    width: 100%;
+  }
 }

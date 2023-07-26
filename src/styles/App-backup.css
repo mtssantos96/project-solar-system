@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../images/background.png');
+  background-size: 100vw;
+  width: 100vw;
+}
+
+header {
+  align-items: center;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+header h1 {
+  color: white;
+  font-size: 145px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+.solar-system {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+.title {
+  align-items: center;
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  display: flex;
+  height: 125px;
+  justify-content: center;
+  mix-blend-mode: hard-light;
+  width: 80%;
+}
+
+h2 {
+  color: white;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.planets-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.planets {
+  align-items: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.planet-card {
+  text-align: center;
+}
+
+/* Imagem de cada planeta */
+.img-planet.Mercúrio {
+  max-height: 31px;
+}
+
+.img-planet.Vênus {
+  max-height: 76px;
+}
+
+.img-planet.Terra {
+  max-height: 79px;
+}
+
+.img-planet.Marte {
+  max-height: 50px;
+}
+
+.img-planet.Júpiter {
+  max-height: 204px;
+}
+
+.img-planet.Saturno {
+  max-height: 210.899px;
+  transform: rotate(-16.53deg);
+}
+
+.img-planet.Urano {
+  max-height: 109px;
+}
+
+.img-planet.Netuno {
+  max-height: 107px;
+}
+
+/* .planet-card:hover {
+  filter: brightness(1.2) contrast(1.4);
+  transform: scale3d(1.2, 1.2, 1);
+  transition: ease-in-out 300ms;
+} */
+
+.p-planets {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+/* Missões */
+.missions-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 165px;
+}
+
+.missions-cards {
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.mission-card {
+  align-items: stretch;
+  background: rgba(24, 26, 37, 0.5);
+  border: 2px solid #dadada;
+  border-radius: 20px;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  height: 370px;
+  mix-blend-mode: hard-light;
+  width: 480px;
+}
+
+/* .mission-card:hover {
+  background-color: #0d0d0dd4;
+  transform: scale3d(1.05, 1.05, 1);
+  transition: ease-in-out 300ms;
+} */
+
+.mission-name {
+  align-items: center;
+  border-bottom: 2px solid #dadada;
+  display: flex;
+  flex: 1;
+  font-size: 35px;
+  font-weight: 700;
+  padding-left: 50px;
+}
+
+.mission-info {
+  align-items: center;
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.mission-year, .mission-dest, .mission-country {
+  padding-left: 50px;
+}
+
+.mission-info-container {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  font-weight: 400;
+  height: 100%;
+  text-align: start;
+  width: 100%;
+}
+
+.footer {
+  align-items: center;
+  background-color: #0d0d0db0;
+  color: #dadada;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer_list {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.list-item a {
+  color: #dadada;
+  font-size: 2rem;
+  margin: 10px;
+  width: 100%;
+}
+
+.list-item a:hover {
+  color: #43f9e7;
+  filter: brightness(1.2) drop-shadow(2px 2px 20px white);
+  transition: ease-in-out 300ms;
+}

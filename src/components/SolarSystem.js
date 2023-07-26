@@ -15,6 +15,7 @@ class SolarSystem extends React.Component {
                 key={ planet.name }
                 planetName={ planet.name }
                 planetImage={ planet.image }
+                planetLink={ planet.link }
               />
             ))}
           </div>

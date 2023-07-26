@@ -7,17 +7,27 @@ class Footer extends React.Component {
       <footer className="footer">
         <div className="footer_list">
           <div className="list-item">
-            <a href="https://www.linkedin.com/in/matheussantpsdev/" className="list-link">
+            <a
+              href="https://www.linkedin.com/in/matheussantpsdev/"
+              target="_blank"
+              className="list-link"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </div>
           <div className="list-item">
-            <a href="https://github.com/mtssantos96" className="list-link">
+            <a
+              href="https://github.com/mtssantos96"
+              target="_blank"
+              className="list-link"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>
         </div>
-        <h1>Matheus Santos &copy;</h1>
+        <h2>Matheus Santos &copy;</h2>
       </footer>);
   }
 }
