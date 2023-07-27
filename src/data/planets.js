@@ -1,11 +1,11 @@
-import MercurioImg from '../images/Mercurio.png';
-import VenusImg from '../images/Venus.png';
-import TerraImg from '../images/Terra.png';
-import MarteImg from '../images/Marte.png';
-import JupiterImg from '../images/Jupiter.png';
-import SaturnoImg from '../images/Saturno.png';
-import Uranoimg from '../images/Urano.png';
-import Netunoimg from '../images/Netuno.png';
+import MercurioImg from '../assets/planets/Mercurio.png';
+import VenusImg from '../assets/planets/Venus.png';
+import TerraImg from '../assets/planets/Terra.png';
+import MarteImg from '../assets/planets/Marte.png';
+import JupiterImg from '../assets/planets/Jupiter.png';
+import SaturnoImg from '../assets/planets/Saturno.png';
+import Uranoimg from '../assets/planets/Urano.png';
+import Netunoimg from '../assets/planets/Netuno.png';
 
 const Planets = [
   {
