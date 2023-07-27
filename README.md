@@ -1,7 +1,8 @@
 # Projeto Solar System - 
 
 ## Projeto Final
-![Solar System](./assets/project/solarSystem.png)
+
+![Solar System](./src/assets/project/solarSystem.png)
 
 ## Descrição do Projeto
 
@@ -38,7 +39,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 </p>
 
 ## Demostração do funcionamento do projeto
-![Solar System](./assets//project/solarSystem.gif)
+![Solar System](./src/assets/project/solarSystem.gif)
 
 ## Como Executar o Projeto
 
@@ -63,6 +64,6 @@ Se você quiser contribuir para o desenvolvimento deste projeto, sinta-se à von
 
 Esse é o protótipo do esperado do projeto (protótipo criado pela [Trybe](https://www.betrybe.com/)):
 
-![protótipo](./assets//projectImages/prototipo.png)
+![protótipo](./src/assets/project/prototipo.png)
 
 # Obrigado pela visita :blue_heart:
