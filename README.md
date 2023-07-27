@@ -1,4 +1,4 @@
-# Projeto Solar System - 
+# Projeto Solar System
 
 ## Projeto Final
 
